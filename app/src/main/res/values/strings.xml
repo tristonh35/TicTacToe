@@ -2,7 +2,9 @@
     <string name="app_name">TicTacToe</string>
     <string name="button">Button</string>
     <string name="new_game">New Game</string>
-    <string name="player_x_s_turn">Player X\'s Turn</string>
+    <string name="player_x_s_turn">Player Xs Turn</string>
+    <string name="player_o_s_turn">Player Os Turn</string>
     <string name="o">O</string>
     <string name="x">X</string>
+
 </resources>

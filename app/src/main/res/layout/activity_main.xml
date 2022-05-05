@@ -7,45 +7,47 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/button3"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button15"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button15"
-        app:layout_constraintTop_toTopOf="@+id/button15"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/button2"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button14"
-        app:layout_constraintEnd_toStartOf="@+id/button16"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button1"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button14"
-        app:layout_constraintTop_toTopOf="@+id/button14"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toTopOf="@+id/button1"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/button1"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="@string/x"
         android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/button33"
-        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button23"
+        android:id="@+id/buttonNewGame"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_marginTop="492dp"
@@ -56,7 +58,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/playerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="436dp"
@@ -67,79 +69,85 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button33"
+        android:id="@+id/button4"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button36"
-        app:layout_constraintEnd_toStartOf="@+id/button34"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button34"
+        android:id="@+id/button5"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="180dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/button35"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/playerTextView"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button33"
-        app:layout_constraintTop_toBottomOf="@+id/button15"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button35"
+        android:id="@+id/button6"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button34"
-        app:layout_constraintTop_toBottomOf="@+id/button16"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button36"
+        android:id="@+id/button7"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="52dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/button37"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/playerTextView"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button33"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button37"
+        android:id="@+id/button8"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/button38"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button36"
-        app:layout_constraintTop_toBottomOf="@+id/button34"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button38"
+        android:id="@+id/button9"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button37"
-        app:layout_constraintTop_toBottomOf="@+id/button35"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
