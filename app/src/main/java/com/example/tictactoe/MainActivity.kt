@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
-@Suppress("UsePropertyAccessSyntax")
+@Suppress("UsePropertyAccessSyntax", "RemoveExplicitTypeArguments")
 class MainActivity : AppCompatActivity() {
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -132,28 +132,29 @@ class MainActivity : AppCompatActivity() {
                 changePlayer()
             }
         }
+        val buttons = arrayOf(
+            findViewById<Button>(R.id.button1),
+            findViewById<Button>(R.id.button2),
+            findViewById<Button>(R.id.button3),
+            findViewById<Button>(R.id.button4),
+            findViewById<Button>(R.id.button5),
+            findViewById<Button>(R.id.button6),
+            findViewById<Button>(R.id.button7),
+            findViewById<Button>(R.id.button8),
+            findViewById<Button>(R.id.button9)
+
+        )
         val newGame = findViewById<Button>(R.id.buttonNewGame)
         newGame.setOnClickListener {
             currPlayer.setText("Player Xs Turn")
-            button1.isClickable = true
-            button2.isClickable = true
-            button3.isClickable = true
-            button4.isClickable = true
-            button5.isClickable = true
-            button6.isClickable = true
-            button7.isClickable = true
-            button8.isClickable = true
-            button9.isClickable = true
-            button1.setText("")
-            button2.setText("")
-            button3.setText("")
-            button4.setText("")
-            button5.setText("")
-            button6.setText("")
-            button7.setText("")
-            button8.setText("")
-            button9.setText("")
+
+            for (button in buttons) {
+                button.isClickable = true
+                button.setText("")
+            }
+
         }
+
 
 
     }
